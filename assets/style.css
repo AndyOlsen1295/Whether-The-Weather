@@ -1,0 +1,57 @@
+body{
+    background-color: beige;
+}
+
+header{
+    background-color: lightblue;
+}
+
+
+.location{
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+.searchBar{
+    background-color: yellow;
+    box-sizing: content-box;
+    width: 50%;
+ 
+}
+
+.card{
+    border-style: solid;
+    border-color: black;
+}
+.card-header1{
+    background-color: orange;
+
+}
+
+.card-header2{
+    background-color: orangered;
+
+}
+
+.card-header3{
+    background-color: red;
+
+}
+
+.card-header4{
+    background-color: violet;
+
+}
+
+.card-header5{
+    background-color: blueviolet;
+
+}
+
+.card-header6{
+    background-color: darkblue;
+    color: white;
+
+}
