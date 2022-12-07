@@ -11,14 +11,18 @@ header{
     background-color: yellow;
     border-style: solid;
     border-color: black;
+    box-sizing: content-box;
+    width: 50%;
+    box-shadow: inset;
+
     
 }
 
 .searchBar{
     background-color: yellow;
     box-sizing: content-box;
-    width: 50%;
- 
+    width: 99%;
+  
 }
 
 .card{
