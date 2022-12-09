@@ -5,6 +5,10 @@
 The purpose of this application is to display weather conditions currently and future dates.
 I will be showcasing my knowledge of JavaScript and Server-Side API's
 
+## Tools:
+
+API's: Open Weather Map API
+
 ## Acceptance
 
 WHEN i search a city or zip code
@@ -17,3 +21,5 @@ Then emoji icons will aslo be displayed corresponding with the current and forec
 AS a user,
 I WANT to be able to look up a city and see the forecast for the next 5 days 
 SO I can plan my vacations accordingly.
+
+

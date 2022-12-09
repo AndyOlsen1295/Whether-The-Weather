@@ -3,56 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Whether-The-Weather</title>
 </head>
 
-<header class="text-center header ">
+<header class="text-center header">
     <h1>Whether The Weather</h1>
+    <p>Search a city to see the current weather, as well as the next 5 days!</p>
 </header>
 
 <body>
 
-    <div class="location" id="location">
-        <input class="searchBar type="text" placeholder="Please type in city or zip code you wish to see.">
-    </div>  
-
+    <div class="location">
+        <input id="location" class="searchBar" type="text" placeholder="Please type in city or zip code you wish to see.">
+    </div>    
+        
+    <div >
+        <button class="searchBtn" id="Btn">Search</button>
+    </div>
+     
+        
+<div class="wrapper">
     <div class="card">
-
-        <div class="card-header1">Current Day
-        <div class="">""</div>
-        </div>     
+        <div class="card-header1" id="currentDay"><h3>Current Day</h3>
+        <p id="currentTemp">Current Temperature:</p>  
+        <p id="todaysHigh">High:</p>
+        <p id="todaysLow">Low:</p>
+        <p id="todaysHumidity">Humidity:</p>
+        <p id="todaysWind">Wind:</p>
+        </div>
+    </div>  
     
         <div class="card">
-
-            <div class="card-header2">Future Day
-            <div class="">""</div>
+            <div class="card-header2" id="futureDay1"><h3>Future Day</h3>
+            <p id="tomorrowHigh">High:</p>
+            <p id="tomorrowLow">Low:</p>
+            <p id="tomorrowHumidity">Humidity:</p>
+            <p id="tommorowWind">Wind:</p>
             </div>
+        </div>
     
         <div class="card">
-
-            <div class="card-header3">Future Day
-            <div class="">""</div>
+            <div class="card-header3" id="futureDay2"><h3>Future Day</h3>
+            <p id="fd2High">High:</p>
+            <p id="fd2Low">Low:</p>
+            <p id="fd2Humidity">Humidity:</p>
+            <p id="fd2Wind">Wind:</p>
             </div>
+        </div>
     
         <div class="card">
-
-            <div class="card-header4">Future Day
-            <div class="">""</div>
+            <div class="card-header4" id="futureDay3"><h3>Future Day</h3>
+            <p id="fd3High">High:</p>
+            <p id="fd3Low">Low:</p>
+            <p id="fd3Humidity">Humidity:</p>
+            <p id="fd3Wind">Wind:/p>
             </div>
+        </div>
     
         <div class="card">
-
-            <div class="card-header5">Future Day
-            <div class="">""</div>
+            <div class="card-header5" id="futureDay4"><h3>Future Day</h3>
+            <p id="fd4High">High:</p>
+            <p id="fd4Low">Low</p>
+            <p id="fd4Humidity">Humidity</p>
+            <p id="fd4Wind">Wind:</p>
             </div>
+        </div>
 
         <div class="card">
-
-            <div class="card-header6">Future Day
-            <div class="">""</div>
+            <div class="card-header6" id="futureDay5"><h3>Future Day</h3>
+            <p id="fd5High">High:</p>
+            <p id="fd5Low">Low:</p>
+            <p id="fd5Humidity">Humidity:</p>
+            <p id="fd5Wind">Wind:</p>
             </div>
+        </div>
+</div>
       
 
         <div class="" id="previousSearches">Previous Searches</div>

@@ -1,61 +1,89 @@
 body{
     background-color: beige;
+    color: white;
+    
 }
 
 header{
     background-color: lightblue;
+    color: whitesmoke;
 }
 
 
 .location{
-    background-color: yellow;
+    color: yellow;
     border-style: solid;
     border-color: black;
     box-sizing: content-box;
-    width: 50%;
-    box-shadow: inset;
-
+    width: 100%;
+    flex-direction: row;
     
 }
 
 .searchBar{
     background-color: yellow;
     box-sizing: content-box;
-    width: 99%;
+    width: 98.5%;
+    color: black;
   
 }
 
-.card{
+.searchBtn{
+    background-color: yellow;
+    color: black;
     border-style: solid;
     border-color: black;
 }
+
+button:hover{
+    cursor: pointer;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+   margin: 20px;
+   height: 350px;
+   width: 150px;
+   box-sizing: border-box;
+}
+
 .card-header1{
     background-color: orange;
+    border-style: solid;
+    border-color: orange;
 
 }
 
 .card-header2{
     background-color: orangered;
-
+    border-style: solid;
+    border-color: orangered;
 }
 
 .card-header3{
     background-color: red;
-
+    border-style: solid;
+    border-color: red;
 }
 
 .card-header4{
     background-color: violet;
-
+    border-style: solid;
+    border-color: violet;
 }
 
 .card-header5{
     background-color: blueviolet;
-
+    border-style: solid;
+    border-color: blueviolet
 }
 
 .card-header6{
     background-color: darkblue;
-    color: white;
-
+    border-style: solid;
+    border-color: darkblue
 }
