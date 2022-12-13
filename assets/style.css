@@ -1,5 +1,9 @@
+*{
+    flex-wrap: wrap;
+}
+
 body{
-    background-color: beige;
+    background-color: blanchedalmond;
     color: white;
     
 }
@@ -7,6 +11,11 @@ body{
 header{
     background-color: lightblue;
     color: whitesmoke;
+    box-sizing: border-box;
+    height: max-content;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 0px;
 }
 
 
@@ -15,9 +24,12 @@ header{
     border-style: solid;
     border-color: black;
     box-sizing: content-box;
-    width: 100%;
+    height: max-content;
+    width: 27%;
     flex-direction: row;
-    
+    margin-bottom: 0px;
+    position:relative; left: 35%
+
 }
 
 .searchBar{
@@ -25,7 +37,7 @@ header{
     box-sizing: content-box;
     width: 98.5%;
     color: black;
-  
+    margin-bottom: 0px;
 }
 
 .searchBtn{
@@ -33,6 +45,10 @@ header{
     color: black;
     border-style: solid;
     border-color: black;
+    left: 250px;
+    position: relative; left: 46%; 
+    border-width: 5px;
+    margin-bottom: 0px;
 }
 
 button:hover{
@@ -42,12 +58,12 @@ button:hover{
 .wrapper{
     display: flex;
     flex-direction: row;
+    margin: 0px;
 }
 
 .card{
-   margin: 20px;
-   height: 350px;
-   width: 150px;
+   margin-top: 0px;
+   margin: 15px;
    box-sizing: border-box;
 }
 
@@ -55,35 +71,77 @@ button:hover{
     background-color: orange;
     border-style: solid;
     border-color: orange;
-
+    height: 400px;
+    width: 218px;
+    margin-top: 0px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 25px;
 }
 
 .card-header2{
     background-color: orangered;
     border-style: solid;
     border-color: orangered;
+    height: 400px;
+    width: 218px;
+    margin-top: 0ppx;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 25px;
 }
 
 .card-header3{
     background-color: red;
     border-style: solid;
     border-color: red;
+    height: 400px;
+    width: 218px;
+    margin-top: 0px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 25px;
 }
 
 .card-header4{
     background-color: violet;
     border-style: solid;
     border-color: violet;
+    height: 400px;
+    width: 218px;
+    margin-top: 0px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 25px;
 }
 
 .card-header5{
     background-color: blueviolet;
     border-style: solid;
-    border-color: blueviolet
+    border-color: blueviolet;
+    height: 400px;
+    width: 218px;
+    margin-top: 0px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 25px;
 }
 
 .card-header6{
     background-color: darkblue;
     border-style: solid;
-    border-color: darkblue
+    border-color: darkblue;
+    height: 400px;
+    width: 218px;
+    margin-top: 0px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 25px;
+}
+
+.previousCity{
+        background-color: black;
+        border-style: solid;
+        border-color: black;
+        height: 400px;
+        width: 218px;
+        margin-top: 0px;
+        text-decoration: underline;
+        margin: 16px;
+        box-shadow: 10px 5px 5px black;
+        border-radius: 25px;
 }
