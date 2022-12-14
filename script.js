@@ -5,11 +5,6 @@ let Searchbar = document.getElementById("location");
 let previousSearches = [];
 let nameEl = document.getElementById("location");
 let currentTempEl = document.getElementById("currentTemp");
-// let maxTempEl = document.getElementById("");
-// let minTempEl = document.getElementById("");
-// let windEl = document.getElementById("");
-// let humidEl = document.getElementById("");
-// let iconEl = document.getElementById("");
 let appid = "&appid=f3e1e373d7139ef02d43f57be5e942ea"
 let apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=";
 
@@ -59,7 +54,7 @@ let cityLocation = () => {
             minTempEl.textContent = `todaysLow: ${data.list[0].main.temp_min}`
             windEl.textContent = `todaysWind: ${data.list[0].wind.speed}`
             humidEl.textContent = `todaysHumidity: ${data.list[0].main.humidity}`
-            iconEl.setAttribute("src", apiUrl)
+            // iconEl.setAttribute("src", apiUrl)
             
         };
         grabCityInfo();
@@ -105,28 +100,38 @@ let grabCityInfo = () => {
         City:${cityName}
         Temp:${maxTemp, minTemp},
         Wind:${cityWind},
-        humidity:${cityHumidity},
-        icon:${weatherIcon},`
+        humidity:${cityHumidity},`
         )            
-            let nameEl = document.getElementById("location");
-            let maxTempEl = document.getElementById("tomorrowsHigh");
-            let minTempEl = document.getElementById("tomorrowsLow");
-            let windEl = document.getElementById("tomorrowsWind");
-            let humidEl = document.getElementById("tomorrowsHumidity");
+           
+        let nameEl = document.getElementById("location");
+        let maxTempEl = document.getElementById("tomorrowHigh");
+        let minTempEl = document.getElementById("tomorrowLow");
+        let windEl = document.getElementById("tomorrowWind");
+        let humidEl = document.getElementById("tomorrowHumidity");
             //let iconEl = document.getElementById("");
     
-                
-                maxTempEl.textContent = `tomorrowsHigh: ${data.list[6].main.temp_max}`
-                minTempEl.textContent = `tomorrowsLow: ${data.list[6].main.temp_min}`
-                windEl.textContent = `tomorrowsWind: ${data.list[6].wind.speed}`
-                humidEl.textContent = `tomorrowsHumidity: ${data.list[6].main.humidity}`
+        nameEl.textContent = `location: ${data.city.name}`        
+        maxTempEl.textContent = `tomorrowHigh: ${data.list[6].main.temp_max}`
+        minTempEl.textContent = `tomorrowLow: ${data.list[6].main.temp_min}`
+        windEl.textContent = `tomorrowWind: ${data.list[6].wind.speed}`
+        humidEl.textContent = `tomorrowHumidity: ${data.list[6].main.humidity}`
                 //iconEl.setAttribute("src", apiUrl)
+
+                // do you think i could copy the above block of code multiple times all in the same function?
+
+           
             
         };
         grabCityInfo();
     })
 
 };
+
+var userCity = function() {}
+
+searchButton.addEventListener("click", function(){
+    futureForecast()
+});
 
     
 
